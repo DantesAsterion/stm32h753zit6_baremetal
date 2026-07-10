@@ -1,0 +1,42 @@
+# ==================================================
+# 1. ARM-GCC / Make Compilation (Firmware and Binaries)
+# ==================================================
+# Ignore the entire build output directory
+build/
+
+# Object files and auto-generated dependencies
+*.o
+*.d
+
+# Executable formats and files for flashing
+*.elf
+*.bin
+*.hex
+*.map
+
+# ==========================================
+# 2. LaTeX Compilation (pdflatex)
+# ==========================================
+# Main auxiliary files
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.pdf
+
+# ==========================================
+# 3. Text Editor (Neovim / Vim)
+# ==========================================
+# Swap and temporary files
+*.swp
+*.swo
+*.swn
+*~
+
+# History for file explorers like Netrw
+.netrwhist
