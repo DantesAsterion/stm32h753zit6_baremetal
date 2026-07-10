@@ -1,0 +1,27 @@
+# Ignore build outputs and binaries
+build/
+bin/
+obj/
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.d
+
+# Ignore LaTeX generated PDFs and logs (Claude only needs to read the .tex source)
+docs/*.pdf
+docs/*.aux
+docs/*.log
+docs/*.toc
+docs/*.out
+docs/*.synctex.gz
+docs/*.fls
+docs/*.fdb_latexmk
+
+# Ignore Git internals
+.git/
+
+# Ignore OS files
+.DS_Store
+.directory
