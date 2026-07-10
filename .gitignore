@@ -1,75 +1,42 @@
-# Prerequisites
+# ==================================================
+# 1. ARM-GCC / Make Compilation (Firmware and Binaries)
+# ==================================================
+# Ignore the entire build output directory
+build/
+
+# Object files and auto-generated dependencies
+*.o
 *.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# Executable formats and files for flashing
 *.elf
 *.bin
 *.hex
 *.map
 
-# Build directories
-build/
-bin/
-obj/
-
-# IDE and Editor folders
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-.directory
-
-# LaTeX build files (for the book)
+# ==========================================
+# 2. LaTeX Compilation (pdflatex)
+# ==========================================
+# Main auxiliary files
 *.aux
-*.bbl
-*.blg
-*.brf
-*.idx
-*.ilg
-*.ind
-*.lof
 *.log
+*.toc
+*.lof
 *.lot
 *.out
-*.toc
 *.synctex.gz
 *.fls
 *.fdb_latexmk
+*.pdf
+
+# ==========================================
+# 3. Text Editor (Neovim / Vim)
+# ==========================================
+# Swap and temporary files
+*.swp
+*.swo
+*.swn
+*~
+
+# History for file explorers like Netrw
+.netrwhist
